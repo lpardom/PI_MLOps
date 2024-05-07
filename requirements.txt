@@ -1,3 +1,12 @@
 fastapi
 pandas
 scikit-learn
+uvicorn
+decorator
+matplotlib-inline
+numpy
+scipy
+uvicorn
+wcwidth
+requests
+wordcloud
