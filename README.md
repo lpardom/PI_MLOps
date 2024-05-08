@@ -21,11 +21,5 @@ Se desarrollaron cinco funciones específicas solicitadas por la empresa para ex
 ### 5. Despliegue
 Se creó una API utilizando FastAPI que expone las funciones desarrolladas. Se realizó un despliegue en la plataforma de Render.
 
-### Uso de la API
-La API se puede acceder en el siguiente enlace: API
-
-### Video del Proyecto
-Se proporciona un video que resume todo el proyecto. Puedes verlo aquí.
-
 ### Requisitos
 Los requisitos para ejecutar la API se encuentran en el archivo [requirements.txt](requirements.txt).
