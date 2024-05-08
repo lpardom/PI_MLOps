@@ -18,9 +18,13 @@ Se implementó un modelo de recomendación item-item que utiliza la similitud de
 Se desarrollaron cinco funciones específicas solicitadas por la empresa para extraer datos relevantes de los conjuntos de datos:
 
 **PlayTimeGenre:** Devuelve el año con más horas jugadas para un género específico.
+
 **UserForGenre:** Devuelve el usuario que acumula más horas jugadas para un género dado y una lista de la acumulación de horas jugadas por año.
+
 **UsersRecommend:** Devuelve el top 3 de juegos más recomendados por usuarios para un año dado.
+
 **UsersWorstDeveloper:** Devuelve el top 3 de desarrolladoras con juegos menos recomendados por usuarios para un año dado.
+
 **sentiment_analysis:** Devuelve un análisis de sentimiento para una empresa desarrolladora específica.
 
 ### 5. Despliegue
