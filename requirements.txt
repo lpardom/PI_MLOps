@@ -1,14 +1,9 @@
 fastapi
 pandas
-ast
-json
 scikit-learn
 uvicorn
-decorator
-matplotlib-inline
 numpy
 scipy
-wcwidth
 requests
 wordcloud
 textblob
