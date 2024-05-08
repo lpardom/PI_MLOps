@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get('/')
 def index():
-    return {'Primer PI para Henry Data Science'}
+    return {'Proyecto Individual 01'}
 
 @app.get('/PlayTimeGenre/{genero}')
 def PlayTimeGenre(genero: str):
@@ -17,7 +17,15 @@ def PlayTimeGenre(genero: str):
     filtered_df = df_ep01[df_ep01['genero'] == genero]
           
     # Construye el response
-    response = {"Año de lanzamiento con más horas jugadas para {}: {}".format(genero,filtered_df['release_year'] )}
+    response = {"Año de lanzamiento con más horas jugadas para {}: {}".format(genero,filtered_df.iloc[0]['release_year'] )}
 
     # Muestra el resultado
+    return response
+
+@app.get('/UserForGenre/{genero}')
+def UserForGenre( genero : str ):
+    df_ep02 = pd.read_csv('endpoint02.csv')
+
+    filtered_df = df_ep02[df_ep02['genero'] == genero]
+    response = {"Usuario con más horas jugadas para {}: {},'Horas jugadas' {}".format(filtered_df.iloc[0]['genero'],filtered_df.iloc[0]['usuario'],filtered_df.iloc[0]['anios_Horas'] )}
     return response
